@@ -1,0 +1,38 @@
+# Python-specific
+*.pyc
+*.pyo
+__pycache__
+*.db
+*.sqlite3
+*.log
+*.env
+
+
+# Django migrations
+backend/**/migrations/
+
+# Virtual environment
+venv/
+env/
+*/env/
+
+# Node.js and frontend-specific
+frontend/node_modules/
+frontend/.env
+frontend/.next/
+frontend/dist/
+frontend/build/
+
+# IDE-specific files
+.vscode/
+.idea/
+*.iml
+
+# MacOS-specific files
+.DS_Store
+
+# Windows-specific files
+Thumbs.db
+
+# Log files
+*.log
