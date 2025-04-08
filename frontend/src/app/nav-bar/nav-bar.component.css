@@ -1,0 +1,115 @@
+@font-face { /* zara font */
+    font-family: 'ZaraFont';
+    src: url('src/assets/fonts/Zara-Font/zara-font.otf') format('opentype');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'ZaraFont', sans-serif;
+}
+
+
+/* header */
+header {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+}
+
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    position: relative; 
+    cursor: pointer;
+
+}
+
+
+nav ul li a:hover {
+    text-decoration: none;
+}
+
+
+/* underline effect */
+nav ul li a:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #333;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+}
+
+
+nav ul li a:hover:after {
+    width: 100%;
+}
+
+#user_image{
+    position: relative;
+    width: 50px;
+    float: left;
+}
+
+#shopping_cart{
+    position: relative;
+    width: 50px;
+    float: right;
+}
+
+/* banner */
+.banner {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #eee;
+}
+
+
+.banner h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+
+/* product */
+.products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f8f8f8;
+}
+
+#welcome{
+    margin-top: 5px;
+    font-size: 20px;
+}

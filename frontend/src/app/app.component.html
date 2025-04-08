@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zara</title>
+</head>
+<body>
+  <div class="loader" *ngIf="showLoader">
+    <h1>Zara</h1>
+  </div>
+
+  <router-outlet *ngIf="!showLoader && showMainContent"></router-outlet>  
+
+  <footer>
+    <p>&copy; 2023 Zara. All rights reserved To <a routerLink="/cant-come-inside">Koral</a>.</p>
+  </footer>
+</body>
+</html>

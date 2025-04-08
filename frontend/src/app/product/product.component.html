@@ -1,0 +1,16 @@
+<ng-container *ngIf="showNavbar">
+  <app-nav-bar>{{showNavbar}}</app-nav-bar>
+</ng-container>
+
+<h2>Products:</h2>
+<mat-card-content *ngIf="products.length > 0" class="product-container">
+  <mat-card *ngFor="let product of products" class="product">
+    <img mat-card-image [src]="product.picture" alt="Product Image" class="product-image">
+    <h3 class="product-name">{{ product.name }}</h3>
+    <p class="product-price">Price: ${{ product.price }}</p>
+    <button mat-button (click)="addToBasket(product.name, product.id)" class="add-to-cart-button">Add to Cart</button>
+  </mat-card>
+</mat-card-content>
+<div *ngIf="products.length === 0">
+  <p>No products available.</p>
+</div>

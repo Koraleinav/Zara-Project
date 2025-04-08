@@ -1,0 +1,53 @@
+@font-face  {/* zara font */
+    font-family: 'ZaraFont' !important; 
+    src: url('src/assets/fonts/Zara-Font/zara-font.otf') format('opentype') !important;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'ZaraFont', sans-serif;
+}
+
+
+/* header */
+header {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+}
+
+/* banner */
+.banner {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #eee;
+}
+
+
+.banner h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+
+/* products */
+.products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f8f8f8;
+}
